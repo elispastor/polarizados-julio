@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Polarizados "JULIO" | Protección y estilo</title>
+    <title>CONE JUNIOR TORRADO | Taller Multiservicios</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -33,7 +33,12 @@
         .footer{background:rgba(11,28,58,0.95);border-top:2px solid rgba(251,191,36,0.3);padding:40px 20px;text-align:center;margin-top:60px}
         .absolute-bottom{position:absolute;bottom:10px;left:0;right:0;text-align:center;background:rgba(0,0,0,0.6);padding:6px;font-size:0.75rem}
         .logo-espacio{width:100px;height:100px;background:rgba(255,255,255,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 15px auto;border:2px solid #fbbf24}
-        @media (max-width:768px){.call-float{right:100px}.carrusel{height:220px}}
+        .nombre-compuesto{display:flex;align-items:flex-start;justify-content:center;gap:10px;flex-wrap:wrap}
+        .cone-grande{font-size:4rem;font-weight:800;background:linear-gradient(135deg,#fbbf24,#f59e0b);background-clip:text;-webkit-background-clip:text;color:transparent;line-height:1}
+        .junior-torrado-block{display:flex;flex-direction:column;text-align:left}
+        .junior-text{font-size:1.3rem;font-weight:600;color:#fbbf24}
+        .torrado-text{font-size:1.5rem;font-weight:700;background:linear-gradient(135deg,#fbbf24,#f59e0b);background-clip:text;-webkit-background-clip:text;color:transparent}
+        @media (max-width:768px){.call-float{right:100px}.carrusel{height:220px}.cone-grande{font-size:2.8rem}}
     </style>
 </head>
 <body>
@@ -44,7 +49,7 @@
     <nav>
         <a href="#inicio" onclick="toggleMenu()">🏠 Inicio</a>
         <a href="#nosotros" onclick="toggleMenu()">👥 Nosotros</a>
-        <a href="#servicios" onclick="toggleMenu()">🚗 Servicios</a>
+        <a href="#servicios" onclick="toggleMenu()">🔧 Servicios</a>
         <a href="#galeria" onclick="toggleMenu()">📸 Galería</a>
         <a href="#contacto" onclick="toggleMenu()">📞 Contacto</a>
         <a href="#" onclick="compartirSitio()">📤 Compartir</a>
@@ -52,20 +57,27 @@
     </nav>
 </div>
 
-<a href="https://wa.me/573196059002?text=Hola,%20quiero%20información%20sobre%20polarizados" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
-<a href="tel:+573196059002" class="call-float"><i class="fas fa-phone-alt"></i></a>
+<a href="https://wa.me/573045599522?text=Hola,%20quiero%20información%20sobre%20los%20servicios%20del%20taller" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:+573045599522" class="call-float"><i class="fas fa-phone-alt"></i></a>
 
 <div class="container mx-auto px-4 py-8 max-w-6xl">
 
-    <!-- PORTADA CON LOGO -->
+    <!-- PORTADA CON LOGO Y NOMBRE COMPUESTO -->
     <section id="inicio" class="text-center mb-12">
         <div class="bg-gradient-to-r from-gray-800 to-gray-700 rounded-2xl p-8 mb-6">
             <div class="logo-espacio">
-                <img src="logo.jpg" alt="Logo Polarizados Julio" class="w-full h-full object-cover rounded-full">
+                <i class="fas fa-tools text-5xl text-amber-400"></i>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold text-amber-400">POLARIZADOS "JULIO"</h1>
-            <p class="text-2xl mt-2">Protección y estilo para tu vehículo</p>
-            <p class="text-lg mt-2">🚚 SERVICIO A DOMICILIO</p>
+            <div class="nombre-compuesto">
+                <span class="cone-grande">CONE</span>
+                <div class="junior-torrado-block">
+                    <span class="junior-text">JUNIOR</span>
+                    <span class="torrado-text">TORRADO</span>
+                </div>
+            </div>
+            <p class="text-2xl mt-2 text-amber-400">TALLER MULTISERVICIOS</p>
+            <p class="text-lg mt-2">🔧 REPARACIÓN · MANTENIMIENTO · SERVICIO TÉCNICO 🔧</p>
+            <p class="text-md mt-1">🚚 SERVICIO A DOMICILIO</p>
         </div>
     </section>
 
@@ -73,50 +85,88 @@
     <section id="galeria" class="card">
         <h2 class="text-3xl font-bold text-amber-400 text-center mb-4">📸 NUESTROS TRABAJOS</h2>
         <div class="carrusel" id="carrusel">
-            <div class="carrusel-slide active"><img src="foto1.jpg" alt="Polarizado 1"><div class="absolute-bottom">🔧 Protección UV</div></div>
-            <div class="carrusel-slide"><img src="foto2.jpg" alt="Polarizado 2"><div class="absolute-bottom">🛡️ Seguridad y estilo</div></div>
-            <div class="carrusel-slide"><img src="foto3.jpg" alt="Polarizado 3"><div class="absolute-bottom">🚗 Instalación profesional</div></div>
-            <div class="carrusel-slide"><img src="foto4.jpg" alt="Polarizado 4"><div class="absolute-bottom">✨ Alta calidad</div></div>
+            <div class="carrusel-slide active"><img src="portada.jpg" alt="Taller Multiservicios"><div class="absolute-bottom">🔧 Especialistas en reparación</div></div>
+            <div class="carrusel-slide"><img src="foto1.jpg" alt="Servicio 1"><div class="absolute-bottom">⚙️ Calidad y experiencia</div></div>
+            <div class="carrusel-slide"><img src="foto2.jpg" alt="Servicio 2"><div class="absolute-bottom">🛠️ Trabajos garantizados</div></div>
+            <div class="carrusel-slide"><img src="foto3.jpg" alt="Servicio 3"><div class="absolute-bottom">🔩 Reparación exprés</div></div>
+            <div class="carrusel-slide"><img src="foto4.jpg" alt="Servicio 4"><div class="absolute-bottom">✅ Multiservicios profesionales</div></div>
         </div>
     </section>
 
     <!-- NOSOTROS -->
     <section id="nosotros" class="card">
         <h2 class="text-3xl font-bold text-amber-400 text-center mb-6">👥 NOSOTROS</h2>
-        <div class="text-center mb-8"><i class="fas fa-users text-5xl text-amber-400 mb-3"></i><h3 class="text-2xl font-bold text-white">¿Quiénes Somos?</h3><p class="text-gray-300 mt-2 max-w-2xl mx-auto">En <strong class="text-amber-400">Polarizados "JULIO"</strong> somos especialistas en polarizados de alta calidad para vehículos, con más de 10 años de experiencia en Cúcuta.</p></div>
-        <div class="grid md:grid-cols-2 gap-6 mb-8">
-            <div class="bg-black/30 p-5 rounded-xl text-center"><i class="fas fa-bullseye text-4xl text-amber-400 mb-2"></i><h3 class="text-xl font-bold text-white">Misión</h3><p class="text-gray-300 text-sm">Proteger a nuestros clientes con polarizados de calidad, brindando confianza y estilo.</p></div>
-            <div class="bg-black/30 p-5 rounded-xl text-center"><i class="fas fa-eye text-4xl text-amber-400 mb-2"></i><h3 class="text-xl font-bold text-white">Visión</h3><p class="text-gray-300 text-sm">Ser líderes en polarizados en Cúcuta, reconocidos por excelencia y servicio a domicilio.</p></div>
+        <div class="text-center mb-8">
+            <i class="fas fa-users text-5xl text-amber-400 mb-3"></i>
+            <h3 class="text-2xl font-bold text-white">¿Quiénes Somos?</h3>
+            <p class="text-gray-300 mt-2 max-w-2xl mx-auto">En <strong class="text-amber-400">TALLER MULTISERVICIOS CONE JUNIOR TORRADO</strong> somos especialistas en reparación y mantenimiento general, con amplia experiencia y servicio a domicilio.</p>
         </div>
-        <div class="text-center"><i class="fas fa-star text-4xl text-amber-400 mb-3"></i><h3 class="text-xl font-bold text-white mb-3">Nuestros Valores</h3><div class="flex flex-wrap justify-center gap-2"><span class="bg-black/40 rounded-full px-4 py-1 text-sm">🔧 Calidad</span><span class="bg-black/40 rounded-full px-4 py-1 text-sm">⚡ Rapidez</span><span class="bg-black/40 rounded-full px-4 py-1 text-sm">🤝 Confianza</span><span class="bg-black/40 rounded-full px-4 py-1 text-sm">🚚 Servicio a domicilio</span></div></div>
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-black/30 p-5 rounded-xl text-center">
+                <i class="fas fa-bullseye text-4xl text-amber-400 mb-2"></i>
+                <h3 class="text-xl font-bold text-white">Misión</h3>
+                <p class="text-gray-300 text-sm">Brindar servicios técnicos de calidad con responsabilidad y eficiencia.</p>
+            </div>
+            <div class="bg-black/30 p-5 rounded-xl text-center">
+                <i class="fas fa-eye text-4xl text-amber-400 mb-2"></i>
+                <h3 class="text-xl font-bold text-white">Visión</h3>
+                <p class="text-gray-300 text-sm">Ser el taller multiservicios más confiable de la zona.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <i class="fas fa-star text-4xl text-amber-400 mb-3"></i>
+            <h3 class="text-xl font-bold text-white mb-3">Nuestros Valores</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="bg-black/40 rounded-full px-4 py-1 text-sm">🔧 Calidad</span>
+                <span class="bg-black/40 rounded-full px-4 py-1 text-sm">⚡ Rapidez</span>
+                <span class="bg-black/40 rounded-full px-4 py-1 text-sm">🤝 Confianza</span>
+                <span class="bg-black/40 rounded-full px-4 py-1 text-sm">🚚 Servicio a domicilio</span>
+            </div>
+        </div>
     </section>
 
     <!-- SERVICIOS -->
     <section id="servicios" class="card">
-        <h2 class="text-3xl font-bold text-amber-400 text-center mb-4">🚗 SERVICIOS</h2>
+        <h2 class="text-3xl font-bold text-amber-400 text-center mb-4">🔧 SERVICIOS</h2>
         <div class="servicios-grid">
-            <span class="servicio-item">Papel Ahumado</span>
-            <span class="servicio-item">Nano Cerámico</span>
-            <span class="servicio-item">Nano Carbonato</span>
-            <span class="servicio-item">Película HD</span>
-            <span class="servicio-item">Espejos</span>
-            <span class="servicio-item">Esmerilado para Carros</span>
-            <span class="servicio-item">Arquitectónico</span>
+            <span class="servicio-item">⚡ Reparación eléctrica</span>
+            <span class="servicio-item">🔌 Instalaciones eléctricas</span>
+            <span class="servicio-item">💧 Plomería y fontanería</span>
+            <span class="servicio-item">🛠️ Mantenimiento general</span>
+            <span class="servicio-item">🔩 Soldadura y cerrajería</span>
+            <span class="servicio-item">📺 Reparación de electrodomésticos</span>
+            <span class="servicio-item">🏠 Servicios para el hogar</span>
         </div>
-        <p class="text-center text-lg font-bold mt-5 text-amber-400">🚚 SERVICIO A DOMICILIO EN CÚCUTA</p>
+        <p class="text-center text-lg font-bold mt-5 text-amber-400">🚚 SERVICIO A DOMICILIO</p>
     </section>
 
     <!-- CONTACTO -->
     <section id="contacto" class="card">
         <h2 class="text-3xl font-bold text-amber-400 text-center mb-6">📞 CONTACTO</h2>
         <div class="grid md:grid-cols-2 gap-6">
-            <div><p><i class="fas fa-map-marker-alt text-amber-400 mr-2"></i> <strong>Dirección:</strong></p><p class="ml-6">Calle 1 No. 4-72 La Merced - Cúcuta</p><p class="mt-4"><i class="fas fa-phone-alt text-amber-400 mr-2"></i> <strong>Teléfono / WhatsApp:</strong></p><p class="ml-6">319 605 9002</p></div>
-            <div><div class="flex flex-wrap justify-center gap-4"><a href="https://wa.me/573196059002" class="btn-wsp flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fab fa-whatsapp text-2xl mr-2"></i> WhatsApp</a><a href="tel:+573196059002" class="btn-call flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fas fa-phone-alt text-2xl mr-2"></i> Llamar ahora</a><a href="#" onclick="compartirSitio()" class="btn-primary flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fas fa-share-alt text-2xl mr-2"></i> Compartir</a></div></div>
+            <div>
+                <p><i class="fas fa-map-marker-alt text-amber-400 mr-2"></i> <strong>Dirección:</strong></p>
+                <p class="ml-6">AV 17 CALLE 13 BARRIO EL CONTENTO</p>
+                <p class="mt-4"><i class="fas fa-phone-alt text-amber-400 mr-2"></i> <strong>Teléfono / WhatsApp:</strong></p>
+                <p class="ml-6">304 559 9522</p>
+                <p class="mt-4"><i class="fas fa-tools text-amber-400 mr-2"></i> <strong>Taller Multiservicios</strong></p>
+                <p class="ml-6">CONE JUNIOR TORRADO</p>
+            </div>
+            <div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://wa.me/573045599522?text=Hola,%20necesito%20un%20servicio%20técnico" class="btn-wsp flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fab fa-whatsapp text-2xl mr-2"></i> WhatsApp</a>
+                    <a href="tel:+573045599522" class="btn-call flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fas fa-phone-alt text-2xl mr-2"></i> Llamar ahora</a>
+                    <a href="#" onclick="copiarTelefono()" class="btn-primary flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fas fa-copy text-2xl mr-2"></i> Copiar número</a>
+                    <a href="#" onclick="compartirSitio()" class="btn-primary flex-1 min-w-[160px] text-center py-4 rounded-xl text-lg font-bold shadow-lg transition transform hover:scale-105"><i class="fas fa-share-alt text-2xl mr-2"></i> Compartir</a>
+                </div>
+            </div>
         </div>
-        <div class="mt-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.456789!2d-72.508789!3d7.893456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42a5b8c9d4e2f1%3A0x123456789abcdef0!2sCalle%201%20%234-72%2C%20La%20Merced%2C%20C%C3%BAcuta!5e0!3m2!1ses!2sco!4v1690000000000!5m2!1ses!2sco" class="w-full h-64 rounded-xl border-2 border-amber-400" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="mt-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-72.508789!3d7.893456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42a5b8c9d4e2f1%3A0x123456789abcdef0!2sAV%2017%20CALLE%2013%20BARRIO%20EL%20CONTENTO!5e0!3m2!1ses!2sco!4v1690000000000!5m2!1ses!2sco" class="w-full h-64 rounded-xl border-2 border-amber-400" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
-    <!-- CÓDIGO DE AFILIADO -->
+    <!-- CÓDIGO DE AFILIADO / OFICINA VIRTUAL -->
     <section class="card text-center">
         <div class="flex justify-between items-center flex-wrap gap-2 mb-2">
             <span class="bg-amber-400 text-black px-3 py-1 rounded-full text-sm font-bold">⭐ PLAN BÁSICO ⭐</span>
@@ -132,40 +182,113 @@
         </div>
         <button id="btnOficina" class="btn-primary w-full py-3 rounded-xl text-lg font-bold flex items-center justify-center gap-2"><i class="fas fa-user-tie"></i> Mi Oficina Virtual</button>
         <div id="panelOficina" class="hidden mt-6 p-4 bg-black/50 rounded-xl text-left">
-            <div class="flex justify-between items-center border-b border-amber-400 pb-2 mb-4"><h3 class="text-xl font-bold text-amber-400">📊 MIS REFERIDOS</h3><button onclick="cerrarOficina()" class="text-white bg-red-600/50 hover:bg-red-600 px-3 py-1 rounded-full text-sm">✕ Cerrar</button></div>
-            <div class="grid grid-cols-2 gap-4 mb-4"><div class="bg-black/30 p-3 rounded-xl text-center"><p class="text-2xl font-bold text-amber-400" id="totalRef">0</p><p class="text-xs">Referidos activos</p></div><div class="bg-black/30 p-3 rounded-xl text-center"><p class="text-2xl font-bold text-amber-400" id="totalGan">$0</p><p class="text-xs">Comisiones generadas</p></div></div>
-            <div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="text-amber-400 border-b border-gray-600"><th class="text-left py-2">Nombre</th><th class="text-left py-2">Código</th><th class="text-left py-2">Plan</th><th class="text-left py-2">Comisión</th></tr></thead><tbody id="tablaRef"><tr><td colspan="4" class="text-center py-4 text-amber-400/70">✨ Próximo referido aquí ✨</tbody>}</div>
+            <div class="flex justify-between items-center border-b border-amber-400 pb-2 mb-4">
+                <h3 class="text-xl font-bold text-amber-400">📊 MIS REFERIDOS</h3>
+                <button onclick="cerrarOficina()" class="text-white bg-red-600/50 hover:bg-red-600 px-3 py-1 rounded-full text-sm">✕ Cerrar</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="bg-black/30 p-3 rounded-xl text-center"><p class="text-2xl font-bold text-amber-400" id="totalRef">0</p><p class="text-xs">Referidos activos</p></div>
+                <div class="bg-black/30 p-3 rounded-xl text-center"><p class="text-2xl font-bold text-amber-400" id="totalGan">$0</p><p class="text-xs">Comisiones generadas</p></div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead><tr class="text-amber-400 border-b border-gray-600"><th class="text-left py-2">Nombre</th><th class="text-left py-2">Código</th><th class="text-left py-2">Plan</th><th class="text-left py-2">Comisión</th></tr></thead>
+                    <tbody id="tablaRef"><tr><td colspan="4" class="text-center py-4 text-amber-400/70">✨ Próximo referido aquí ✨</td></tr></tbody>
+                </table>
+            </div>
             <div class="mt-4 text-center"><button onclick="invitarAmigos()" class="btn-wsp inline-block py-2 px-4 rounded-full text-sm font-bold flex items-center justify-center gap-2 mx-auto"><i class="fab fa-whatsapp text-lg"></i> Invitar a mis amigos</button></div>
         </div>
     </section>
 
-    <!-- QR DE AFILIADO -->
+    <!-- QR -->
     <section class="card text-center">
         <h2 class="text-2xl font-bold text-amber-400 mb-2">📲 ESCANEA NUESTRO QR Y GUARDA NUESTRA TARJETA DIGITAL</h2>
         <p class="text-gray-300 mb-3">Escanea y obtén tu tarjeta digital con el código <strong class="text-amber-400">NGE202</strong></p>
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://polarizados-julio.pages.dev?ref=NGE202" alt="QR Afiliado Polarizados Julio" class="mx-auto w-44 h-44">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://cone-junior-torrado.pages.dev?ref=NGE202" alt="QR Taller Multiservicios" class="mx-auto w-44 h-44">
         <p class="text-xs text-gray-400 mt-2">Código: <strong class="text-amber-400">NGE202</strong> · Nueva Generación Emprendedora</p>
     </section>
 
 </div>
 
 <footer class="footer">
-    <p><strong>© 2026 Polarizados "JULIO"</strong> | Todos los derechos reservados</p>
-    <p>Calle 1 No. 4-72 La Merced, Cúcuta</p>
-    <div class="mt-4"><a href="https://tutarjetadigital.netlify.app" class="btn-primary btn">📱 Tu Tarjeta Digital</a></div>
+    <p><strong>© 2026 CONE JUNIOR TORRADO - TALLER MULTISERVICIOS</strong> | Todos los derechos reservados</p>
+    <p>AV 17 CALLE 13 BARRIO EL CONTENTO</p>
+    <p>📞 304 559 9522</p>
+    <div class="mt-4"><a href="#" class="btn-primary btn">📱 Tu Tarjeta Digital</a></div>
     <p class="mt-4 text-sm">NGE - Nueva Generación Emprendedora · Unidos Ganamos Más</p>
 </footer>
 
 <script>
     function toggleMenu(){document.getElementById('sidebar').classList.toggle('active');}
-    let slide=0;const slides=document.querySelectorAll('.carrusel-slide');if(slides.length){setInterval(()=>{slides[slide].classList.remove('active');slide=(slide+1)%slides.length;slides[slide].classList.add('active')},4000);}
-    function compartirSitio(){const url=window.location.href;if(navigator.share){navigator.share({title:document.title,text:'Mira este sitio web',url:url});}else{navigator.clipboard.writeText(url);alert('📋 Enlace copiado');}}
-    function copiarCodigo(){const codigo=document.getElementById('codigoAfiliado').innerText;navigator.clipboard.writeText(codigo);alert('✅ Código '+codigo+' copiado');}
-    const btnOficina=document.getElementById('btnOficina');if(btnOficina){btnOficina.addEventListener('click',function(){const panel=document.getElementById('panelOficina');panel.classList.toggle('hidden');if(!panel.classList.contains('hidden')){cargarReferidos();}});}
+    
+    let slide=0;
+    const slides=document.querySelectorAll('.carrusel-slide');
+    if(slides.length){
+        setInterval(()=>{
+            slides[slide].classList.remove('active');
+            slide=(slide+1)%slides.length;
+            slides[slide].classList.add('active')
+        },4000);
+    }
+    
+    function compartirSitio(){
+        const url=window.location.href;
+        if(navigator.share){
+            navigator.share({title:document.title,text:'Taller Multiservicios CONE JUNIOR TORRADO',url:url});
+        }else{
+            navigator.clipboard.writeText(url);
+            alert('📋 Enlace copiado');
+        }
+    }
+    
+    function copiarTelefono(){
+        const telefono="3045599522";
+        navigator.clipboard.writeText(telefono);
+        alert('✅ Número '+telefono+' copiado');
+    }
+    
+    function copiarCodigo(){
+        const codigo=document.getElementById('codigoAfiliado').innerText;
+        navigator.clipboard.writeText(codigo);
+        alert('✅ Código '+codigo+' copiado');
+    }
+    
+    const btnOficina=document.getElementById('btnOficina');
+    if(btnOficina){
+        btnOficina.addEventListener('click',function(){
+            const panel=document.getElementById('panelOficina');
+            panel.classList.toggle('hidden');
+            if(!panel.classList.contains('hidden')){
+                cargarReferidos();
+            }
+        });
+    }
+    
     function cerrarOficina(){document.getElementById('panelOficina').classList.add('hidden');}
-    function cargarReferidos(){document.getElementById('tablaRef').innerHTML='<tr><td colspan="4" class="text-center py-4 text-amber-400/70">✨ Próximo referido aquí ✨</tbody>';document.getElementById('totalRef').innerText='0';document.getElementById('totalGan').innerText='$0';}
-    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth'});});});
-    function invitarAmigos(){const url=window.location.href;const mensaje=`🎁 *¡Hola!* 🎁%0a%0aTe invito a obtener tu tarjeta digital y entrar al mundo de los negocios digitales.%0a%0a🔗 *Mi enlace de afiliado:* ${url}%0a%0a💡 *Código promocional:* NGE202%0a%0a⭐ *Plan BÁSICO* ⭐%0a%0a👉 ¡Escanea el QR o haz clic en el enlace! 👈%0a%0aNGE - Nueva Generación Emprendedora`;if(navigator.share){navigator.share({title:'Invitación a mi tarjeta digital',text:'Te invito a obtener tu tarjeta digital con mi código NGE202',url:url});}else{window.open(`https://wa.me/?text=${mensaje}`,'_blank');}}
+    
+    function cargarReferidos(){
+        document.getElementById('tablaRef').innerHTML='<tr><td colspan="4" class="text-center py-4 text-amber-400/70">✨ Próximo referido aquí ✨</td></tr>';
+        document.getElementById('totalRef').innerText='0';
+        document.getElementById('totalGan').innerText='$0';
+    }
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+            const target=document.querySelector(this.getAttribute('href'));
+            if(target) target.scrollIntoView({behavior:'smooth'});
+        });
+    });
+    
+    function invitarAmigos(){
+        const url=window.location.href;
+        const mensaje=`🎁 *¡Hola!* 🎁%0a%0aTe invito a obtener tu tarjeta digital y entrar al mundo de los negocios digitales.%0a%0a🔗 *Mi enlace de afiliado:* ${url}%0a%0a💡 *Código promocional:* NGE202%0a%0a⭐ *Plan BÁSICO* ⭐%0a%0a👉 ¡Escanea el QR o haz clic en el enlace! 👈%0a%0aNGE - Nueva Generación Emprendedora`;
+        if(navigator.share){
+            navigator.share({title:'Invitación a mi tarjeta digital',text:'Te invito a obtener tu tarjeta digital con mi código NGE202',url:url});
+        }else{
+            window.open(`https://wa.me/?text=${mensaje}`,'_blank');
+        }
+    }
 </script>
 
 </body>
